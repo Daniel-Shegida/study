@@ -243,6 +243,6 @@ default :puts("if u entered a wrong command just do it again but correctly ");ch
 }
 }
 return 0;
-}*/
+}123123124124124233412*/
 int main()
 {return 0;}
