@@ -8,7 +8,7 @@
  ============================================================================
  */
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 
 //style will be later (sorry)
@@ -141,12 +141,15 @@ float multiplication()
 	      }
 a= a*b;
 printf("%f",b);
-return 0;
-}
+	}
+return 0;}
+
 
 float division()
 {
 	float ret ;
+	float a;
+	float b;
 		while (2)
 		{
 		  printf("enter first number\n");
@@ -172,13 +175,15 @@ float division()
 		        break;
 		      }
 a= a/b;
-printf("%f",b);
+printf("%f",b);}
 return 0;
 }
 
 float power()
 {
 	float ret ;
+	float a;
+	int b;
 		while (2)
 		{
 		  printf("enter  number\n");
@@ -193,7 +198,7 @@ float power()
 		        break;
 		      }
 		  printf("enter his power\n");
-		  ret = scanf("%f",&b);
+		  ret = scanf("%i",&b);
 		  if (0 != ret)
 		      {
 		        printf("OK\n");
@@ -207,7 +212,8 @@ for (int i = 1;i<=b;i++)
 {
 a*=a;
 }
-printf("%f",b);
+
+printf("%f",b);}
 return 0;
 }
 
@@ -237,4 +243,6 @@ default :puts("if u entered a wrong command just do it again but correctly ");ch
 }
 }
 return 0;
-}
+}*/
+int main()
+{return 0;}
