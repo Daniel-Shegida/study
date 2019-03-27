@@ -85,8 +85,7 @@ float min()
 unsigned int fact()
 {
 	unsigned int ret;
-	puts ("enter a number");
-	unsigned int a ;
+	unsigned int a ;65к
 	unsigned int b = 1;
 	while (2)
 		{
