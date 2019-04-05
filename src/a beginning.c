@@ -1,15 +1,15 @@
 /*
  ============================================================================
- Name        : test.c
+ Name        : a beginning.c
  Author      : me
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Version     :0.1
+ Copyright   : none
+ Description : kinda a calculator in c
  ============================================================================
  #include <stdio.h>
 #include <stdlib.h>
 
-//style will be later (sorry)
+
 float plus_print ()
 {
 	float a ;
