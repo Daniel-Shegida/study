@@ -217,25 +217,25 @@ int main()
             scanf("%c",&ch);//scan  command
             switch(ch)
             {
-                case '+' :plus_print() ; puts("do u want to repeat");scanf("%i",&q);
+                case '+' :plus_print() ; puts("do u want to repeat");scanf("%i",&q);//in case + doing summ and asking for repeat 
                 if (q==0) {ok+=1;break;}
                 else break;
-                case '-' :min_print(); puts("do u want to repeat");scanf("%i",&q);
+                case '-' :min_print(); puts("do u want to repeat");scanf("%i",&q);//in case - doing subtracting and asking for repeat
                 if (q==0) {ok+=1;break;}
                 else break;
-                case 'f' :fact_print();puts("do u want to repeat");scanf("%i",&q);
+                case 'f' :fact_print();puts("do u want to repeat");scanf("%i",&q);//in case f doing factorial and asking for repeat
                 if (q==0) {ok+=1;break;}
                 else break;
-                case '*' :multiplication_print(); puts("do u want to repeat");scanf("%i",&q);
+                case '*' :multiplication_print(); puts("do u want to repeat");scanf("%i",&q);//in case * doing multiplication and asking for repeat
                 if (q==0) {ok+=1;break;}
                 else break;
-                case '/' :division_print(); puts("do u want to repeat");scanf("%i",&q);
+                case '/' :division_print(); puts("do u want to repeat");scanf("%i",&q);//in case / doing division and asking for repeat
                 if (q==0) {ok+=1;break;}
                 else break;
-                case '^' :power_print(); puts("do u want to repeat");scanf("%i",&q);
+                case '^' :power_print(); puts("do u want to repeat");scanf("%i",&q);//in case ^ finding a power and asking for repeat
                 if (q==0) {ok+=1;break;}
                 else break;
-                default :puts("another cycle don't forget commands +-f^*/  ");ch ='l';break;
+                default :puts("another cycle don't forget commands +-f^*/  ");ch ='l';break;//repeat a list of commands because a wrong one 
             }
     }
     return 0;
