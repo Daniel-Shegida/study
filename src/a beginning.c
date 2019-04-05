@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : a beginning.c
- Author      : me
+ Author      : shegida daniel
  Version     :0.1
  Copyright   : none
  Description : kinda a calculator in c
