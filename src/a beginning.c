@@ -2,7 +2,7 @@
  ============================================================================
  Name        : a beginning.c
  Author      : shegida daniel
- Version     :0.1
+ Version     : 0.1
  Copyright   : none
  Description : kinda a calculator in c
  ============================================================================
