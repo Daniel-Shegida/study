@@ -6,7 +6,8 @@
  Copyright   : none
  Description : kinda a calculator in c
  ============================================================================
- #include <stdio.h>
+ */
+#include <stdio.h>
 #include <stdlib.h>
 
 
