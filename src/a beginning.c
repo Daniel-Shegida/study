@@ -16,7 +16,7 @@ float plus_print ()
     float a ;
     float b ;
     float ret ;
-    printf("enter first number\n");
+    printf("enter first number\n");// input data
     ret = scanf("%f",&a);
     if (0 != ret)
     {
@@ -38,8 +38,8 @@ float plus_print ()
         printf("invalid-not a number(or not)");
         return 0;
     }
-    a = a + b;
-    printf("%f\n",a);
+    a = a + b;//calculating
+    printf("%f\n",a);//release answer
     return 0;
 }
 
@@ -71,8 +71,8 @@ float min_print()
         printf("invalid-not a number(or not)");
         return 0;
     }
-    a = a - b;
-    printf("%f\n",a);
+    a = a - b;//calculating
+    printf("%f\n",a);//release answer
     return 0;
 }
 
@@ -80,10 +80,9 @@ float min_print()
 unsigned int fact_print()
 {
     unsigned int ret;
-    puts ("enter a number");
     unsigned int a ;
     unsigned int b = 1;
-    printf("enter first number\n");
+    printf("enter fact number\n");// input data
     ret = scanf("%u",&a);
     if (0 != ret)
     {
@@ -94,11 +93,11 @@ unsigned int fact_print()
         printf("invalid-not a number(or not)");
         return 0;
     }
-    for (int i = 1;i<=a;i++)
+    for (int i = 1;i<=a;i++)//calculating
     {
         b=b*i;
     }
-    printf("%u\n",b);
+    printf("%u\n",b);//release answer
     return 0;
 }
 
@@ -108,7 +107,7 @@ float multiplication_print()
     float a;
     float b;
     float ret ;
-    printf("enter first number\n");
+    printf("enter first number\n");// input data
     ret = scanf("%f",&a);
     if (0 != ret)
     {
@@ -130,8 +129,8 @@ float multiplication_print()
         printf("invalid-not a number(or not)");
         return 0;
     }
-    a= a*b;
-    printf("%f\n",b);
+    a= a*b;//calculating
+    printf("%f\n",b);//release answer
     return 0;}
 
 float division_print()
@@ -139,7 +138,7 @@ float division_print()
     float ret ;
     float a;
     float b;
-    printf("enter first number\n");
+    printf("enter first number\n");// input data
     ret = scanf("%f",&a);
     if (0 != ret)
     {
@@ -161,8 +160,8 @@ float division_print()
         printf("invalid-not a number(or not)");
         return 0;
     }
-    a= a/b;
-    printf("%f\n",a);
+    a= a/b;//calculating
+    printf("%f\n",a);//release answer
     return 0;
 }
 
@@ -172,7 +171,7 @@ int power_print()
     int ret ;
     int a;
     int b;
-    printf("enter  number\n");
+    printf("enter  number\n");// input data
     ret = scanf("%i",&a);
     if (0 != ret)
     {
@@ -198,7 +197,7 @@ int power_print()
     {
         a=a*a;
     }
-    printf("%i\n",a);
+    printf("%i\n",a);//release answer
     return 0;
 }
 
@@ -209,13 +208,13 @@ int main()
     int ok = 0;
     int q = 34;
     char ch ='p';
-    puts("do u need a list of commandsY/N");
+    puts("do u need a list of commandsY/N");//asking for a list of commands 
     scanf("%c",&ch);
     if (ch==Y) puts("+_f^");
-    puts("enter a command");
-    while (ok!=1)
+    puts("enter a command");//asking for a command
+    while (ok!=1)//loop for repeating 
     {
-            scanf("%c",&ch);
+            scanf("%c",&ch);//scan  command
             switch(ch)
             {
                 case '+' :plus_print() ; puts("do u want to repeat");scanf("%i",&q);
