@@ -43,6 +43,7 @@ float plus_print ()
 	return 0;
 }
 
+
 float min_print()
 {
 	float a ;
@@ -75,6 +76,7 @@ float min_print()
 	return 0;
 }
 
+
 unsigned int fact_print()
 {
 	unsigned int ret;
@@ -99,6 +101,7 @@ unsigned int fact_print()
 	printf("%u",b);
 	return 0;
 }
+
 
 float multiplication_print()
 {
@@ -162,6 +165,7 @@ float division_print()
 	printf("%f",a);
 	return 0;
 }
+
 
 float power_print()
 {
