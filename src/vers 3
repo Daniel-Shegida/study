@@ -18,11 +18,12 @@
 void vector_muinus(float *v1,float *v2,int *ret)
 {
    int m;
+   float res;
    puts("your vector is");
    for (m = 0;m<*ret;m++)
    {
-	   v1[m]= v1[m]- v2[m];
-	   printf ("%f\n",v1[m]);
+	   res= v1[m]- v2[m];
+	   printf ("%f\t%f\t%f\n",res,v2[m],v1[m]);
    }
 }
 
@@ -42,11 +43,12 @@ void vectorPlus (float *v1,float *v2,int *ret)
 void vector_scal(float *v1,float *v2,int *ret)
 {
 	int m;
+	float res;
 	puts("your vector is");
 	for (m = 0;m<*ret;m++)
 	{
-		v1[m]= v1[m]* v2[m];
-		printf ("%d\n",v1[m]);
+		res = v1[m]* v2[m];
+		printf ("%f\t%f\t%f\n",res,v2[m],v1[m]);
 	}
 }
 
