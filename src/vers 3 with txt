@@ -1,0 +1,212 @@
+/*
+ ============================================================================
+ Name        : calcul.c
+ Author      : me
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+//order is important in functions
+
+#include <stdio.h>
+#include <stdlib.h>
+//idk wgat i m doing
+
+
+
+int vector_muinus(float *v1,float *v2,int *ret)
+{
+   FILE *inFile, *outFile;
+   inFile = fopen("source.txt","r");
+   outFile = fopen("output.txt","w");
+   int m;
+   float res;
+   puts("your vector is");
+   for (m = 0;m<*ret;m++)
+   {
+       res= v1[m]- v2[m];
+       fprintf (inFile, "%f\t%f\t%f\n", v1[m], v2[m],res);
+   }
+   return 0 ;
+}
+
+int vectorPlus (float *v1,float *v2,int *ret)
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    int m;
+    float res;
+    puts("your vector is");
+    for (m = 0;m<*ret;m++)
+    {
+        res= v1[m] + v2[m];
+        printf ("%f\t%f\t%f\n",res,v2[m],v1[m]);
+    }
+    return 0;
+}
+
+
+void vector_scal(float *v1,float *v2,int *ret)
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    int m;
+    float res;
+    puts("your vector is");
+    for (m = 0;m<*ret;m++)
+    {
+        res = v1[m]* v2[m];
+        printf ("%f\t%f\t%f\n",res,v2[m],v1[m]);
+    }
+}
+
+
+float plus_print ()
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    float a ;
+    float b ;
+    fscanf (inFile, "%f%f", &a, &b);
+    a = a + b;
+
+    fprintf (outFile, "%f", a);
+    return 0;
+}
+float min_print()
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    float a ;
+    float b ;
+    float ret ;
+    fscanf (inFile, "%f%f", &a, &b);}
+    a = a - b;
+    fprintf (outFile, "%f", a);
+    return 0;
+}
+unsigned int fact_print()
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    unsigned int a ;
+    unsigned int b = 1;
+    fscanf (inFile, "%f%f", &a, &b);
+    for (int i = 1;i<=a;i++)
+    {
+        b=b*i;
+    }
+    fprintf (outFile, "%f", a);
+    return 0;
+}
+float multiplication_print()
+{
+    fscanf (inFile, "%f%f", &a, &b);
+    a= a*b;
+    fprintf (outFile, "%f", a);
+    return 0;}
+float division_print()
+{
+
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    float a;
+    float b;
+    fscanf (inFile, "%f%f", &a, &b);
+    a= a/b;
+    fprintf (outFile, "%f", a);
+    return 0;
+}
+float power_print()
+{
+    FILE *inFile, *outFile;
+    inFile = fopen("source.txt","r");
+    outFile = fopen("output.txt","w");
+    float a;
+    int b;
+    fscanf (inFile, "%f%f", &a, &b);
+    for (int i = 1;i<=b;i++)
+    {
+        a*=a;
+    }
+    fprintf (outFile, "%f", a);
+    return 0;
+}
+
+float vector_pl_print()///errors in vec are just to diff
+{
+    int ret,i,c;
+    char cheese;
+    float *vector1;
+    float *vector2;
+    printf("enter a number of spaces in vector ");
+    scanf("%d",&ret);
+    vector1 = malloc(ret*sizeof(float));
+    vector2 = malloc(ret*sizeof(float));
+    printf("enter first vector ");
+    for (i = 0;i<ret;i++) {scanf ("%f",&vector1[i]);}
+    printf("enter second vector ");
+    for (c = 0;c<ret;c++) {scanf ("%f",&vector2[c]);}
+    puts("what do u want to do with vectors ");
+    puts("wait a sec");
+    while (1)
+        {
+                scanf("%c",&cheese);
+                switch(cheese)
+                {
+                    case '+': vectorPlus(vector1,vector2,&ret);continue;
+                    case '-': vector_muinus(vector1,vector2,&ret);break;
+                    case 's': vector_scal(vector1,vector2,&ret);break;
+                }
+        }
+            return 0 ;
+}
+
+int main()
+{
+    char Y = 'Y';
+    int ok = 0;
+    int q = 34;
+    char ch ='p';
+    puts("do u need a list of commandsY/N");
+    scanf("%c",&ch);
+    if (ch==Y) puts("+_f^v");
+    puts("enter a command");
+    while (ok!=1)
+    {
+            scanf("%c",&ch);
+            switch(ch)
+            {
+                case '+' :plus_print() ; puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case '-' :min_print(); puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case 'f' :fact_print();puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case '*' :multiplication_print(); puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case '/' :division_print(); puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case '^' :power_print(); puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                case 'v' :vector_pl_print() ; puts("do u want to repeat");scanf("%i",&q);
+                if (q==0) {ok+=1;break;}
+                else break;
+                default :puts("another cycle don't forget commands +-f^*/  ");ch ='l';break;
+            }
+    }
+    return 0;
+}
