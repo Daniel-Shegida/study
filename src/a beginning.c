@@ -1,3 +1,6 @@
+
+
+
 /*
  ============================================================================
  Name        : a beginning.c
@@ -208,30 +211,30 @@ int main()
     int ok = 0;
     int q = 34;
     char ch ='p';
-    puts("do u need a list of commandsY/N");//asking for a list of commands 
+    puts("do u need a list of commandsY/N");//asking for a list of commands
     scanf("%c",&ch);
     if (ch==Y) puts("+_f^");
     puts("enter a command");//asking for a command
-    while (ok!=1)//loop for repeating 
+    while (ok!=1)//loop for repeating
     {
             scanf("%c",&ch);//scan  command
             switch(ch)
             {
                 case '+' :
-                     plus_print() ; //in case + doing summ and asking for repeat 
-                     puts("do u want to repeat");
+                     plus_print() ; //in case + doing summ and asking for repeat
+                     puts("do u want to repeat 0-no/1-no continue");
                      scanf("%i",&q);
-                     if (q==0) 
+                     if (q==0)
                      {
                          ok+=1;
                          break;
                      }
                      else break;
                 case '-' :
-                     min_print(); 
-                     puts("do u want to repeat");
+                     min_print();
+                     puts("do u want to repeat0-no/1-no continue");
                      scanf("%i",&q);//in case - doing subtracting and asking for repeat
-                     if (q==0) 
+                     if (q==0)
                      {
                          ok+=1;
                          break;
@@ -239,7 +242,7 @@ int main()
                      else break;
                 case 'f' :
                      fact_print();
-                     puts("do u want to repeat");
+                     puts("do u want to repeat0-no/1-no continue");
                      scanf("%i",&q);//in case f doing factorial and asking for repeat
                      if (q==0)
                      {
@@ -249,9 +252,9 @@ int main()
                      else break;
                 case '*' :
                      multiplication_print();
-                     puts("do u want to repeat");
+                     puts("do u want to repeat0-no/1-no continue");
                      scanf("%i",&q);//in case * doing multiplication and asking for repeat
-                     if (q==0) 
+                     if (q==0)
                      {
                          ok+=1;
                          break;
@@ -259,9 +262,9 @@ int main()
                 else break;
                 case '/' :
                      division_print();
-                     puts("do u want to repeat");
+                     puts("do u want to repeat0-no/1-no continue");
                      scanf("%i",&q);//in case / doing division and asking for repeat
-                     if (q==0) 
+                     if (q==0)
                      {
                          ok+=1;
                          break;
@@ -269,7 +272,7 @@ int main()
                      else break;
                 case '^' :
                      power_print();
-                     puts("do u want to repeat");
+                     puts("do u want to repeat0-no/1-no continue");
                      scanf("%i",&q);//in case ^ finding a power and asking for repeat
                      if (q==0)
                      {
@@ -278,7 +281,7 @@ int main()
                 default :
                      puts("another cycle don't forget commands +-f^*/  ");
                      ch ='l';
-                     break;//repeat a list of commands because a wrong one 
+                     break;//repeat a list of commands because a wrong one
             }
     }
     return 0;
