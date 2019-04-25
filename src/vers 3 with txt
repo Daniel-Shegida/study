@@ -146,22 +146,17 @@ float vector_pl_print()///errors in vec are just to diff
     char cheese;
     float *vector1;
     float *vector2;
-    printf("enter a number of spaces in vector ");
     scanf("%d",&ret);
     vector1 = malloc(ret*sizeof(float));
     vector2 = malloc(ret*sizeof(float));
-    printf("enter first vector ");
     for (i = 0;i<ret;i++) {scanf ("%f",&vector1[i]);}
-    printf("enter second vector ");
     for (c = 0;c<ret;c++) {scanf ("%f",&vector2[c]);}
-    puts("what do u want to do with vectors ");
-    puts("wait a sec");
     while (1)
         {
                 scanf("%c",&cheese);
                 switch(cheese)
                 {
-                    case '+': vectorPlus(vector1,vector2,&ret);continue;
+                    case '+': vectorPlus(vector1,vector2,&ret);break;
                     case '-': vector_muinus(vector1,vector2,&ret);break;
                     case 's': vector_scal(vector1,vector2,&ret);break;
                 }
